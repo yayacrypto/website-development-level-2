@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Alex Rivera</title>
+  <meta name="description" content="Contact form for the Level 2 portfolio.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="index.html">Alex Rivera</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>Contact</h1>
+      <p>This form has no backend. It checks your input in the browser and shows a message. Nothing is sent or stored.</p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <span class="hint">Use a fake address while you practice.</span>
+        </label>
+        <label for="topic">Topic
+          <select id="topic" name="topic">
+            <option>Project idea</option>
+            <option>Feedback</option>
+            <option>Just saying hi</option>
+          </select>
+        </label>
+        <label for="message">Message
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+        </label>
+        <button type="submit">Check my message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </main>
+    <footer>AI can suggest. You decide, understand, and test.</footer>
+  </div>
+</body>
+</html>
